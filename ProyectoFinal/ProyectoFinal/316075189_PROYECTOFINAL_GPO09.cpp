@@ -38,7 +38,7 @@ bool firstMouse = true;
 
 GLfloat deltaTime = 0.0f;
 GLfloat lastFrame = 0.0f;
-float rot = 0.0f;
+float rot = 90.0f;
 bool mov1 = false;
 bool mov2 = false;
 
@@ -152,7 +152,12 @@ int main()
     Model EstanSup((char*)"Models/Cuarto/estanteSuperior.obj");
     Model MeCentral((char*)"Models/Cuarto/mesaCentral.obj");
     Model Pizarron((char*)"Models/Cuarto/Pizarron.obj");
-    
+    Model Vidrio((char*)"Models/Cuarto/Vidrio.obj");
+    Model Micro((char*)"Models/Micro/11642_Microwave_v1_L3.obj");
+    Model craneo((char*)"Models/skull/skull.obj");
+    Model Planta((char*)"Models/Planta/indoor plant_02.obj");
+
+
     GLuint texture;
     glGenTextures(1, &texture);
     glBindTexture(GL_TEXTURE_2D, texture);
@@ -253,6 +258,43 @@ int main()
         model = glm::mat4(1);
         glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
         EstanSup.Draw(shader);
+
+          //Vidrio 
+        model = glm::mat4(1);
+        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+        Vidrio.Draw(shader);
+        
+        
+        //Microandas         
+        model = glm::mat4(1);
+        model = glm::translate(model, glm::vec3(-0.5200f, 0.24f, -0.200f));
+        model = glm::rotate(model, glm::radians(rot), glm::vec3(0.0f, 1.0f, 0.0f));
+        model = glm::scale(model, glm::vec3(0.030f, 0.03f, 0.03f));
+        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+        Micro.Draw(shader);
+        
+        
+        //Creaneo         
+
+        //glUniform3f(glGetUniformLocation(lightingShader.Program, "material.ambient"), 0.25f, 0.20725f, 0.20715f);
+        //glUniform3f(glGetUniformLocation(lightingShader.Program, "material.diffuse"), 1.0f, 0.8290f, 0.8290f);
+        //glUniform3f(glGetUniformLocation(lightingShader.Program, "material.specular"), 0.2966480f, 0.2966480f, 0.296648f);
+        //glUniform1f(glGetUniformLocation(lightingShader.Program, "material.shininess"), 0.008f);
+        model = glm::mat4(1);
+        model = glm::translate(model, glm::vec3(-0.5200f, 0.2f, 0.200f));
+        model = glm::rotate(model, glm::radians(rot), glm::vec3(0.0f, 1.0f, 0.0f));
+        model = glm::scale(model, glm::vec3(0.0150f, 0.015f, 0.015f));
+        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+        craneo.Draw(shader);
+        
+        //Planta 
+        model = glm::mat4(1);
+        model = glm::translate(model, glm::vec3(-0.5100f, 0.01f, -0.600f));
+        model = glm::rotate(model, glm::radians(rot), glm::vec3(0.0f, 1.0f, 0.0f));
+        model = glm::scale(model, glm::vec3(0.040f, 0.04f, 0.04f));
+        glUniformMatrix4fv(glGetUniformLocation(shader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+        Planta.Draw(shader);
+
 
 
 
