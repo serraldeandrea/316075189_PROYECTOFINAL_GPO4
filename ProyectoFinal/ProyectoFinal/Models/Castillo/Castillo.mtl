@@ -33,6 +33,13 @@ Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd Hueso.png
 Ni 1.00
+newmtl Castillo_Castillo_initialShadingGroup
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd rosa.png
+Ni 1.00
 newmtl Castillo_initialShadingGroup5
 illum 4
 Kd 0.50 0.50 0.50
@@ -319,6 +326,34 @@ Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd Anaranjado.png
+Ni 1.00
+newmtl Rio_Rio_lambert27SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd aguaroja.png
+Ni 1.00
+newmtl Rio_Rio_lambert28SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd aguaroja.png
+Ni 1.00
+newmtl Rio_Rio_pasted__lambert28SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd aguaroja.png
+Ni 1.00
+newmtl Rio_lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd aguaroja.png
 Ni 1.00
 newmtl Rio_lambert24SG
 illum 4
@@ -1058,6 +1093,13 @@ Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd Anaranjado.png
 Ni 1.00
+newmtl lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd arc.png
+Ni 1.00
 newmtl lambert48SG
 illum 4
 Kd 0.00 0.00 0.00
@@ -1142,12 +1184,40 @@ Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd Hueso.png
 Ni 1.00
+newmtl pasted__Castillo_Castillo_initialShadingGroup
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd rosa.png
+Ni 1.00
 newmtl pasted__Castillo_initialShadingGroup
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd rosa.png
+Ni 1.00
+newmtl pasted__Nubes_lambert6SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd nubes.png
+Ni 1.00
+newmtl pasted__Nubes_lambert6SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd nubes.png
+Ni 1.00
+newmtl pasted__lambert2SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd arc.png
 Ni 1.00
 newmtl pasted__lambert16SG
 illum 4
@@ -1260,6 +1330,13 @@ Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd paletaazul.png.png
+Ni 1.00
+newmtl pasted__pasted__Nubes_lambert6SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd nubes.png
 Ni 1.00
 newmtl pasted__pasted__lambert48SG
 illum 4
