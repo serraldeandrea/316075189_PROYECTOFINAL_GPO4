@@ -34,15 +34,36 @@ const GLuint WIDTH = 800, HEIGHT = 600;
 int SCREEN_WIDTH, SCREEN_HEIGHT;
 
 // Camera
-Camera  camera(glm::vec3(0.0f, 0.0f, 3.0f));
+Camera  camera(glm::vec3(0.0f, 5.0f, 20.0f));
 GLfloat lastX = WIDTH / 2.0;
 GLfloat lastY = HEIGHT / 2.0;
 bool keys[1024];
 bool firstMouse = true;
 // Light attributes
+
+float rot = 90.0f;
+float rot2 = 0.0f;
+bool mov1 = false;
+bool mov2 = false;
 glm::vec3 lightPos(0.0f, 0.0f, 0.0f);
 bool active;
 float tiempo;
+glm::vec3 PosIni(-95.0f, 0.0f, -45.0f);
+
+
+//Animación del coche
+float movKitX = 0.0;
+float movKitZ = 0.0;
+float rotKit = 0.0;
+
+bool circuito = false;
+bool recorrido1 = true;
+bool recorrido2 = false;
+bool recorrido3 = false;
+bool recorrido4 = false;
+bool recorrido5 = false;
+
+
 // Positions of the point lights
 glm::vec3 pointLightPositions[] = {
 	glm::vec3(0.0f,0.0f, 0.0f),
@@ -152,8 +173,10 @@ int main()
 
 
 	Shader lightingShader("Shaders/lighting.vs", "Shaders/lighting.frag");
+	//Shader lampShader("Shaders/lamp.vs", "Shaders/lamp.frag");
 	Shader lampShader("Shaders/lamp2.vs", "Shaders/lamp2.frag");
 	Shader Anim("Shaders/anim.vs", "Shaders/anim.frag");
+	Shader Anim2("Shaders/anim2.vs", "Shaders/anim2.frag");
 	//Cuarto
 	Model Cuarto((char*)"Models/Cuarto/Cuarto.obj");
 	Model Puerta((char*)"Models/Cuarto/Puerta.obj");
@@ -165,6 +188,7 @@ int main()
 	Model MeCentral((char*)"Models/Cuarto/mesaCentral.obj");
 	Model Pizarron((char*)"Models/Cuarto/Pizarron.obj");
 	Model Vidrio((char*)"Models/Cuarto/Vidrio.obj");
+	Model Vidrio2((char*)"Models/Cuarto/Vidrio2.obj");
 	Model Pecera1((char*)"Models/Cuarto/Pecera1.obj");
 	Model Pecera2((char*)"Models/Cuarto/Pecera2.obj");
 	Model Ciencia((char*)"Models/Cuarto/Ciencia.obj");
@@ -174,8 +198,11 @@ int main()
 	Model Micro((char*)"Models/Micro/11642_Microwave_v1_L3.obj");
 	Model craneo((char*)"Models/skull/skull.obj");
 	Model Planta((char*)"Models/Planta/indoor plant_02.obj");
-	Model Vaso((char*)"Models/Cuarto/vaso.obj");
+	Model Material((char*)"Models/Cuarto/material.obj");
 	Model Libros((char*)"Models/Cuarto/Libros.obj");
+	Model Porta((char*)"Models/Cuarto/Porta.obj");
+	Model Tetera((char*)"Models/Cuarto/Tetera.obj");
+	Model Locker((char*)"Models/Cuarto/Locker.obj");
 
 	//FACHADA
 
@@ -190,11 +217,11 @@ int main()
 	Model Castillo((char*)"Models/Castillo/Castillo.obj");
 	Model Vent_der((char*)"Models/Castillo/Ventanas_der.obj");
 	Model Vent_izq((char*)"Models/Castillo/Ventanas_izq.obj");
-	Model Porton((char*)"Models/Castillo/Porton.obj");
+	Model Porton_D((char*)"Models/Castillo/Porton_der.obj");
+	Model Porton_I((char*)"Models/Castillo/Porton_izq.obj");
 	Model BardaPa((char*)"Models/Castillo/BardaPa.obj");
 	Model Arcoiris((char*)"Models/Castillo/Arcoiris.obj");
 	Model Escaleras((char*)"Models/Castillo/Escaleras.obj");
-	Model Puerta_Segu((char*)"Models/Castillo/PuertaSegu.obj");
 
 
 
@@ -351,10 +378,6 @@ int main()
 		Cuarto.Draw(lightingShader);
 
 
-		//Puerta
-		model = glm::mat4(1);
-		glUniformMatrix4fv(glGetUniformLocation(lightingShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
-		Puerta.Draw(lightingShader);
 
 		//DUcha
 		model = glm::mat4(1);
@@ -371,14 +394,45 @@ int main()
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
 		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 0.3f);
-		//model = glm::translate(model, glm::vec3(0.0f, 0.0f, 5.0f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
 		Vidrio.Draw(lightingShader);
 		glDisable(GL_BLEND);  //Desactiva el canal alfa 
 		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 1.0f);
+		
+		
+		
+		////Vidrio 2
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
+		glEnable(GL_BLEND);//Avtiva la funcionalidad para trabajar el canal alfa
+		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+		model = glm::mat4(1);
+
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
+		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 0.3f);
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
+		model = glm::translate(model, glm::vec3(-0.60f, 1.82f, -0.43f));
+		model = glm::rotate(model, glm::radians(rot2), glm::vec3(0.0f, 1.0f, 0.0));
+		glUniformMatrix4fv(glGetUniformLocation(lightingShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+
+		Vidrio2.Draw(lightingShader);
+		glDisable(GL_BLEND);  //Desactiva el canal alfa 
+		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 1.0f);
 
 
+		//Puerta
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(-0.60f, 1.82f, -0.43f));
+		model = glm::rotate(model, glm::radians(rot2), glm::vec3(0.0f, 1.0f, 0.0));
+
+		glUniformMatrix4fv(glGetUniformLocation(lightingShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+		Puerta.Draw(lightingShader);
+
+		glUniformMatrix4fv(glGetUniformLocation(lightingShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+		Puerta.Draw(lightingShader);
 		//Barra  Trabajo 
 		model = glm::mat4(1);
 		glUniformMatrix4fv(glGetUniformLocation(lightingShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
@@ -399,25 +453,72 @@ int main()
 		glUniformMatrix4fv(glGetUniformLocation(lightingShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
 		Pizarron.Draw(lightingShader);
 
-		//Carrito
-		model = glm::mat4(1);
-		glUniformMatrix4fv(glGetUniformLocation(lightingShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
-		Carrito.Draw(lightingShader);
-
 		//Estante Sup 
 		model = glm::mat4(1);
 		glUniformMatrix4fv(glGetUniformLocation(lightingShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
 		EstanSup.Draw(lightingShader);	
 		
 		//CIENCIA 
+
+
+		view = camera.GetViewMatrix();
 		model = glm::mat4(1);
-		glUniformMatrix4fv(glGetUniformLocation(lightingShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+		model = glm::translate(model, glm::vec3(-0.36f, 1.96f, 0.570f));
+		model = glm::scale(model, glm::vec3(0.008f, 0.008f, 0.008f));
+		model = glm::rotate(model, glm::radians(rot), glm::vec3(0.0f, 0.0f, 1.0));
+
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+
 		Ciencia.Draw(lightingShader);
+		////////////////////////////////////////////////////////////TRASLADADOS
+				//PORAT
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(-0.850f, 1.94f, 0.300f));
+		model = glm::scale(model, glm::vec3(0.008f, 0.008f, 0.008f));
+		model = glm::rotate(model, glm::radians(rot), glm::vec3(0.0f, 1.0f, 0.0));
+		model = glm::translate(model, PosIni + glm::vec3(movKitX, 0, movKitZ));
+		model = glm::rotate(model, glm::radians(rotKit), glm::vec3(0.0f, 1.0f, 0.0));//(0.0f, 1.0f, 0.0));
+		glUniformMatrix4fv(glGetUniformLocation(lightingShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+		Porta.Draw(lightingShader);
+		
+		//Material
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
+		glEnable(GL_BLEND);//Avtiva la funcionalidad para trabajar el canal alfa
+		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+		model = glm::mat4(1);
+
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
+		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 0.7f);
+		model = glm::translate(model, glm::vec3(-0.850f, 1.94f, 0.300f));
+		model = glm::scale(model, glm::vec3(0.008f, 0.008f, 0.008f));
+		model = glm::rotate(model, glm::radians(rot), glm::vec3(0.0f, 1.0f, 0.0));
+		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
+		Material.Draw(lightingShader);
+		glDisable(GL_BLEND);  //Desactiva el canal alfa 
+		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 1.0f);
+		
+
+
+		
+		//Libros         
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(-0.60f, 1.94f, 0.600f));
+		model = glm::scale(model, glm::vec3(0.08f, 0.08f, 0.08f));
+		model = glm::rotate(model, glm::radians(rot), glm::vec3(0.0f, 1.0f, 0.0));
+		glUniformMatrix4fv(glGetUniformLocation(lightingShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+		Libros.Draw(lightingShader);
 
 		//PECERA2
 		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(-0.413f, 1.94f, 0.600f));
+		model = glm::scale(model, glm::vec3(0.05f, 0.05f, 0.05f));
+		//model = glm::rotate(model, glm::radians(rot), glm::vec3(0.0f, 1.0f, 0.0));
 		glUniformMatrix4fv(glGetUniformLocation(lightingShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
 		Pecera2.Draw(lightingShader);
+
 		//PECERA1
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
@@ -427,7 +528,7 @@ int main()
 
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
-		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 0.45f);
+		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 0.7f);
 		//model = glm::translate(model, glm::vec3(0.0f, 0.0f, 5.0f));
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
@@ -435,65 +536,54 @@ int main()
 		glDisable(GL_BLEND);  //Desactiva el canal alfa 
 		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 1.0f);
 
-		//////////////////////////////////////////////////////////////TRASLADADOS
-		////Vaso
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
-		//glEnable(GL_BLEND);//Avtiva la funcionalidad para trabajar el canal alfa
-		//glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
-		//model = glm::mat4(1);
-
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
-		//glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 0.45f);
-		////model = glm::translate(model, glm::vec3(0.0f, 0.0f, 5.0f));
-		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		//glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
-		//Vaso.Draw(lightingShader);
-		//glDisable(GL_BLEND);  //Desactiva el canal alfa 
-		//glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 1.0f);
-		//
-		//
-		////Libros         
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(-0.5200f, 0.24f, -0.200f));
-		////model = glm::rotate(model, glm::radians(rot), glm::vec3(0.0f, 1.0f, 0.0f));
-		//model = glm::scale(model, glm::vec3(0.030f, 0.03f, 0.03f));
-		//glUniformMatrix4fv(glGetUniformLocation(lightingShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
-		// Libros.Draw(lightingShader);
-
 		//Microandas         
 		model = glm::mat4(1);
-		model = glm::translate(model, glm::vec3(-0.5200f, 5.24f, -0.200f));
-		//model = glm::rotate(model, glm::vec3(0.0f, 1.0f, 0.0f));
-		model = glm::scale(model, glm::vec3(0.030f, 0.03f, 0.03f));
+		model = glm::translate(model, glm::vec3(-0.860f, 1.97f, -0.0800f));
+		model = glm::rotate(model, glm::radians(rot), glm::vec3(0.0f, 1.0f, 0.0));
+		model = glm::scale(model, glm::vec3(0.020f, 0.02f, 0.02f));
 		glUniformMatrix4fv(glGetUniformLocation(lightingShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
 		Micro.Draw(lightingShader);
 
 
-		//  //Creaneo         
+		  //Creaneo         
 
-		//glUniform3f(glGetUniformLocation(lightingShader.Program, "material.ambient"), 0.25f, 0.20725f, 0.20715f);
-		//glUniform3f(glGetUniformLocation(lightingShader.Program, "material.diffuse"), 1.0f, 0.8290f, 0.8290f);
-		//glUniform3f(glGetUniformLocation(lightingShader.Program, "material.specular"), 0.2966480f, 0.2966480f, 0.296648f);
-		//glUniform1f(glGetUniformLocation(lightingShader.Program, "material.shininess"), 0.008f);
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(-0.5200f, 2.2f, 0.200f));
-		////model = glm::rotate(model, glm::radians(rot), glm::vec3(0.0f, 1.0f, 0.0f));
-		//model = glm::scale(model, glm::vec3(0.0150f, 0.015f, 0.015f));
-		//glUniformMatrix4fv(glGetUniformLocation(lightingShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
-		//craneo.Draw(lightingShader);
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "material.ambient"), 0.25f, 0.20725f, 0.20715f);
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "material.diffuse"), 1.0f, 0.8290f, 0.8290f);
+		glUniform3f(glGetUniformLocation(lightingShader.Program, "material.specular"), 0.2966480f, 0.2966480f, 0.296648f);
+		glUniform1f(glGetUniformLocation(lightingShader.Program, "material.shininess"), 0.008f);
+		model = glm::mat4(1);
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(-0.860f, 1.938f, 0.050f));
+		model = glm::rotate(model, glm::radians(rot), glm::vec3(0.0f, 1.0f, 0.0));
+		model = glm::scale(model, glm::vec3(0.010f, 0.01f, 0.01f));
+		glUniformMatrix4fv(glGetUniformLocation(lightingShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+		craneo.Draw(lightingShader);
 
-		// //Planta 
-		//model = glm::mat4(1);
-		//model = glm::translate(model, glm::vec3(-0.5100f, 0.01f, -0.600f));
-		////model = glm::rotate(model, glm::radians(rot), glm::vec3(0.0f, 1.0f, 0.0f));
-		//model = glm::scale(model, glm::vec3(0.040f, 2.04f, 0.04f));
-		//glUniformMatrix4fv(glGetUniformLocation(lightingShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
-		//Planta.Draw(lightingShader);
+		//TETERA
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(-0.860f, 1.933f, 0.175f));
+		model = glm::rotate(model, glm::radians(rot), glm::vec3(0.0f, 1.0f, 0.0));
+		model = glm::scale(model, glm::vec3(0.0150f, 0.015f, 0.015f));
+		glUniformMatrix4fv(glGetUniformLocation(lightingShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+		Tetera.Draw(lightingShader);
 
 
-		 //FACHADA
+		 //Planta 
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(-0.860f, 1.82f, -0.3f));
+		model = glm::rotate(model, glm::radians(rot), glm::vec3(0.0f, 1.0f, 0.0));
+		model = glm::scale(model, glm::vec3(0.030f, 0.03f, 0.03f));
+		glUniformMatrix4fv(glGetUniformLocation(lightingShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+		Planta.Draw(lightingShader);
+		
+		//Locker 
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(-0.820f, 1.82f, -0.4f));
+		model = glm::scale(model, glm::vec3(0.030f, 0.03f, 0.03f));
+		glUniformMatrix4fv(glGetUniformLocation(lightingShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+		Locker.Draw(lightingShader);
+
+		///////////////////////////////////////////////////////////////////////////////////7 //FACHADA
 
 
 		 //castillo
@@ -548,23 +638,14 @@ int main()
 		//model = glm::scale(model, glm::vec3(0.05f, 0.5f, 0.5f));
 		glUniformMatrix4fv(glGetUniformLocation(lightingShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
 		Nubes.Draw(lightingShader);
-
-		////Arcoiris
-		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
-		glEnable(GL_BLEND);//Avtiva la funcionalidad para trabajar el canal alfa
-		glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
+		
+		
+		
 		model = glm::mat4(1);
-
-		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
-		//glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 0.9f);
-		//model = glm::translate(model, glm::vec3(0.0f, 0.0f, 5.0f));
-		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
-		glUniform1i(glGetUniformLocation(lightingShader.Program, "activaTransparencia"), 0);
+		//model = glm::scale(model, glm::vec3(0.05f, 0.5f, 0.5f));
+		glUniformMatrix4fv(glGetUniformLocation(lightingShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
 		Arcoiris.Draw(lightingShader);
-		glDisable(GL_BLEND);  //Desactiva el canal alfa 
-		glUniform4f(glGetUniformLocation(lightingShader.Program, "colorAlpha"), 1.0f, 1.0f, 1.0f, 1.0f);
+
 
 		//TORRES
 
@@ -592,11 +673,19 @@ int main()
 		glUniformMatrix4fv(glGetUniformLocation(lightingShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
 		BardaPa.Draw(lightingShader);
 
-		//Barda
+		//PORTON DER
 		model = glm::mat4(1);
-		//model = glm::scale(model, glm::vec3(0.05f, 0.5f, 0.5f));
+		model = glm::translate(model, glm::vec3(0.4120f, 0.05f, 2.250f));
+		model = glm::rotate(model, glm::radians(-rot2), glm::vec3(0.0f, 1.0f, 0.0));
 		glUniformMatrix4fv(glGetUniformLocation(lightingShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
-		Porton.Draw(lightingShader);
+		Porton_D.Draw(lightingShader);
+		
+		
+		//PORTON IZQ
+		model = glm::mat4(1);
+		model = glm::translate(model, glm::vec3(-0.4120f, 0.05f, 2.250f));
+		glUniformMatrix4fv(glGetUniformLocation(lightingShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
+		Porton_I.Draw(lightingShader);
 
 		//ENTRADA
 		model = glm::mat4(1);
@@ -608,13 +697,7 @@ int main()
 		model = glm::mat4(1);
 		//model = glm::scale(model, glm::vec3(0.05f, 0.5f, 0.5f));
 		glUniformMatrix4fv(glGetUniformLocation(lightingShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
-		Escaleras.Draw(lightingShader);		
-		
-		//PUERTA DE ESCALERAS
-		model = glm::mat4(1);
-		//model = glm::scale(model, glm::vec3(0.05f, 0.5f, 0.5f));
-		glUniformMatrix4fv(glGetUniformLocation(lightingShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
-		Puerta_Segu.Draw(lightingShader);
+		Escaleras.Draw(lightingShader);
 
 		//PISO
 		model = glm::mat4(1);
@@ -622,8 +705,7 @@ int main()
 		glUniformMatrix4fv(glGetUniformLocation(lightingShader.Program, "model"), 1, GL_FALSE, glm::value_ptr(model));
 		Piso.Draw(lightingShader);
 
-
-
+		
 		glBindVertexArray(0);
 
 
@@ -657,6 +739,23 @@ int main()
 		model = glm::mat4(1);
 		glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
 		Rio.Draw(Anim);
+
+
+
+		//Anim2.Use();
+		//tiempo = glfwGetTime();
+		//modelLoc = glGetUniformLocation(Anim2.Program, "model");
+		//viewLoc = glGetUniformLocation(Anim2.Program, "view");
+		//projLoc = glGetUniformLocation(Anim2.Program, "projection");
+		//glUniformMatrix4fv(viewLoc, 1, GL_FALSE, glm::value_ptr(view));
+		//glUniformMatrix4fv(projLoc, 1, GL_FALSE, glm::value_ptr(projection));
+		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		//model = glm::mat4(1);
+		//glUniformMatrix4fv(modelLoc, 1, GL_FALSE, glm::value_ptr(model));
+		//glUniform1f(glGetUniformLocation(Anim.Program, "time"), tiempo);
+		//Carrito.Draw(Anim2);
+
+
 		for (GLuint i = 0; i < 4; i++)
 		{
 			model = glm::mat4(1);
@@ -723,25 +822,134 @@ void DoMovement()
 	{
 		pointLightPositions[0].x -= 0.01f;
 	}
-
-	if (keys[GLFW_KEY_Y])
+	if (keys[GLFW_KEY_O])
 	{
-		pointLightPositions[0].y += 0.01f;
+		if (rot2 < 45.0f)
+			rot2 += 0.5f;
+		mov1 = true;
+	}
+	if (mov1)
+	{
+		if (rot2 < 90.0f)
+			rot2 += 0.05f;
+		else {
+			mov1 = false;
+			mov2 = true;
+		}
 	}
 
-	if (keys[GLFW_KEY_H])
+
+	if (keys[GLFW_KEY_P])
 	{
-		pointLightPositions[0].y -= 0.01f;
+		if (rot2 < 45.0f)
+			rot2 += 0.5f;
+		mov1 = true;
 	}
-	if (keys[GLFW_KEY_U])
+	if (mov2)
 	{
-		pointLightPositions[0].z -= 0.1f;
-	}
-	if (keys[GLFW_KEY_J])
-	{
-		pointLightPositions[0].z += 0.01f;
+		if (rot2 > 0.0f)
+			rot2 -= 0.05f;
+		else {
+			mov2 = false;
+			mov1 = true;
+		}
+
 	}
 
+		if (keys[GLFW_KEY_Y])
+		{
+			pointLightPositions[0].y += 0.01f;
+		}
+
+		if (keys[GLFW_KEY_H])
+		{
+			pointLightPositions[0].y -= 0.01f;
+		}
+		if (keys[GLFW_KEY_U])
+		{
+			pointLightPositions[0].z -= 0.1f;
+		}
+		if (keys[GLFW_KEY_J])
+		{
+			pointLightPositions[0].z += 0.01f;
+		}
+		if (keys[GLFW_KEY_1])
+		{
+			pointLightPositions[3].x += 0.1f;
+			pointLightPositions[3].y += 0.1f;
+			pointLightPositions[3].z += 0.1f;
+			circuito = true;
+		}
+
+		if (keys[GLFW_KEY_2])
+		{
+			circuito = false;
+		}
+	}
+
+
+void animacion()
+{
+
+	if (circuito)
+	{
+		if (recorrido1) //Recorrido inicial del carrito 
+		{
+			rotKit = 90;
+			movKitX += 0.1f;//Z
+			if (movKitX > 0.4f)//>90 sentido del recorrido Z
+			{
+				recorrido1 = false;
+				recorrido2 = true;
+			}
+		}
+		if (recorrido2)
+		{
+			rotKit = -45;//90 sentido del carro
+			movKitZ += 0.1f;// X (+ adelante - atras)
+			movKitX -= 0.1f;
+			if (movKitZ > 0.4 && movKitX < 0.4)//>90 X sentido del recorrido (sentidos iguales >)  && movKitZ < 30
+			{
+				recorrido2 = false;
+				recorrido3 = true;
+
+			}
+		}
+
+		if (recorrido3)
+		{
+			rotKit = 270;//180 sentido del carro Z
+			movKitX -= 0.1f;
+			if (movKitX < 0)//<0 Z sentido del recorrido
+			{
+				recorrido3 = false;
+				recorrido4 = true;
+			}
+		}
+
+		if (recorrido4)
+		{
+			rotKit = 180;//270sentido del carro X
+			movKitZ -= 0.1f;
+			if (movKitZ < 0)//<0 X sentido del recorrido
+			{
+				recorrido4 = false;
+				recorrido5 = true;
+			}
+		}
+
+		if (recorrido5)
+		{
+			rotKit = 0; //sentido del carro Z
+			movKitZ += 0.1f;
+			if (movKitZ > 0)//>0 Z sentido del recorrido
+			{
+				recorrido5 = false;
+				recorrido1 = true;
+			}
+		}
+
+	}
 }
 
 // Is called whenever a key is pressed/released via GLFW
