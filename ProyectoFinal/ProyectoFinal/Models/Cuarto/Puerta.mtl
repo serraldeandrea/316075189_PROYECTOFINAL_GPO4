@@ -3,7 +3,7 @@ illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
-map_Kd azul.png
+map_Kd Paredes2.png
 Ni 1.00
 newmtl Ducha_Ducha_initialShadingGroup
 illum 4
@@ -273,6 +273,13 @@ Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd 4ec1b71a16709eac7e01f91597095340--wallpaper--wallpaper-ideas.jpg
 Ni 1.00
+newmtl initialShadingGroup
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd azulLibro.png
+Ni 1.00
 newmtl lambert33SG
 illum 4
 Kd 0.00 0.00 0.00
@@ -349,6 +356,69 @@ Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd Morado_puertas.jpg
+Ni 1.00
+newmtl lambert44SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd black-texture-vector.png
+Ni 1.00
+newmtl lambert46SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Anaranjado.png
+Ni 1.00
+newmtl lambert47SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Blanco.png
+Ni 1.00
+newmtl lambert48SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Blanco.png
+Ni 1.00
+newmtl lambert49SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd amarillo_libro.png
+Ni 1.00
+newmtl lambert50SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd verde.png
+Ni 1.00
+newmtl lambert51SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Blanco.png
+Ni 1.00
+newmtl lambert52SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd amarillo_libro.png
+Ni 1.00
+newmtl lambert53SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd black-texture-vector.png
 Ni 1.00
 newmtl mesaCentral_lambert16SG
 illum 4
@@ -820,6 +890,33 @@ Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd metal-texture-background-vector.png
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl phong20SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Aqua.png
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl phong21SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Rata.png
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl phong22SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Aqua.png
 Ni 1.00
 Ks 0.50 0.50 0.50
 Ns 18.00

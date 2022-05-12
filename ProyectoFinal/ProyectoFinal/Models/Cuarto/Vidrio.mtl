@@ -1,152 +1,121 @@
-newmtl Arbol_paleta_lambert26SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd Morado_puertas.jpg
-Ni 1.00
-newmtl Arbol_paleta_lambert30SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd Blanco.png
-Ni 1.00
-newmtl Arbol_paleta_lambert31SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd Blanco.png
-Ni 1.00
-newmtl Arbol_paleta_lambert32SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd Blanco.png
-Ni 1.00
-newmtl Barda_lambert29SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd Hueso.png
-Ni 1.00
-newmtl Castillo_Castillo_initialShadingGroup
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd rosa.png
-Ni 1.00
-newmtl Castillo_initialShadingGroup3
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd helado.gif
-Ni 1.00
-newmtl Castillo_lambert3SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd amarillo.png
-Ni 1.00
 newmtl Cuarto_lambert28SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
-map_Kd azul.png
+map_Kd Paredes2.png
 Ni 1.00
-newmtl Ducha_initialShadingGroup
+newmtl Ducha_Ducha_initialShadingGroup
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd 11IiawEO3LL._AC_.png
 Ni 1.00
-newmtl Entrada_initialShadingGroup2
+newmtl Ducha_blinn1SG
 illum 4
-Kd 0.00 0.00 0.00
+Kd 0.50 0.50 0.50
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
-map_Kd helado.gif
 Ni 1.00
-newmtl Entrada_lambert11SG
+Ks 0.50 0.50 0.50
+Ns 0.06
+newmtl Ducha_blinn14SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
-map_Kd helado.gif
+map_Kd metal-texture-background-vector.png
 Ni 1.00
-newmtl Entrada_lambert12SG
+Ks 0.50 0.50 0.50
+Ns 0.06
+newmtl Ducha_lambert22SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
-map_Kd Aqua.png
+map_Kd 44884.png
 Ni 1.00
-newmtl Entrada_lambert13SG
+newmtl Ducha_lambert23SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
-map_Kd Aqua.png
+map_Kd images.png
 Ni 1.00
-newmtl Entrada_lambert14SG
+newmtl Ducha_lambert44SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
-map_Kd Aqua.png
+map_Kd images.png
 Ni 1.00
-newmtl Entrada_lambert15SG
+newmtl Ducha_pasted__blinn1SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
-map_Kd Aqua.png
+map_Kd metal-texture-background-vector.png
 Ni 1.00
-newmtl Entrada_lambert16SG
+Ks 0.50 0.50 0.50
+Ns 0.06
+newmtl Ducha_pasted__blinn2SG
 illum 4
-Kd 0.00 0.00 0.00
+Kd 0.50 0.50 0.50
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
-map_Kd cafe.png
 Ni 1.00
-newmtl Entrada_lambert25SG
+Ks 0.50 0.50 0.50
+Ns 0.06
+newmtl Ducha_pasted__lambert19SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
-map_Kd galleta.png
+map_Kd metal-texture-background-vector.png
 Ni 1.00
-newmtl Entrada_phong1SG
+newmtl Ducha_pasted__lambert20SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.52 0.52 0.52
+Tf 1.00 1.00 1.00
+map_Kd istockphoto-520861969-612x612.jpeg
+Ni 1.00
+newmtl Ducha_pasted__lambert22SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
-map_Kd rojo.png
+map_Kd 44884.png
+Ni 1.00
+newmtl Ducha_pasted__lambert23SG
+illum 4
+Kd 0.15 0.13 0.24
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl Ducha_pasted__lambert23SG2
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd images.png
+Ni 1.00
+newmtl Ducha_pasted__pasted__lambert23SG
+illum 4
+Kd 0.15 0.13 0.24
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl Ducha_phong18SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd metal-texture-background-vector.png
 Ni 1.00
 Ks 0.50 0.50 0.50
 Ns 18.00
-newmtl Nubes_lambert6SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd nubes.png
-Ni 1.00
-newmtl Piso_lambert17SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd piso2.png
-Ni 1.00
 newmtl Puerta_lambert29SG
 illum 4
 Kd 0.00 0.00 0.00
@@ -154,41 +123,22 @@ Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd wooden-texture-1528254.png
 Ni 1.00
-newmtl Punta_lambert5SG
+newmtl barraLateral_pasted__pasted__pasted__pasted__pasted__lambert14SG7
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
-map_Kd Anaranjado.png
+map_Kd Morado_puertas.jpg
 Ni 1.00
-newmtl Rio_lambert24SG
+newmtl barraLateral_pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong10SG2
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
-map_Kd rojo.png
+map_Kd 6352b3b6bb169b03e6a4e9d225ca560e.png
 Ni 1.00
-newmtl Rio_lambert27SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd rojo.png
-Ni 1.00
-newmtl Rio_lambert28SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd rojo.png
-Ni 1.00
-newmtl Rio_pasted__lambert28SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd rojo.png
-Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
 newmtl barraTrabajo_lambert12SG
 illum 4
 Kd 0.00 0.00 0.00
@@ -210,14 +160,6 @@ Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd 4ec1b71a16709eac7e01f91597095340--wallpaper--wallpaper-ideas.jpg
 Ni 1.00
-newmtl blinn1SG
-illum 4
-Kd 0.50 0.50 0.50
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 0.06
 newmtl blinn3SG
 illum 4
 Kd 0.00 0.00 0.00
@@ -317,15 +259,6 @@ map_Kd 6352b3b6bb169b03e6a4e9d225ca560e.png
 Ni 1.00
 Ks 0.50 0.50 0.50
 Ns 0.06
-newmtl blinn14SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd metal-texture-background-vector.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 0.06
 newmtl estanteSuperior_lambert13SG
 illum 4
 Kd 0.00 0.00 0.00
@@ -342,23 +275,10 @@ map_Kd 4ec1b71a16709eac7e01f91597095340--wallpaper--wallpaper-ideas.jpg
 Ni 1.00
 newmtl initialShadingGroup
 illum 4
-Kd 0.50 0.50 0.50
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-Ni 1.00
-newmtl lambert22SG
-illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
-map_Kd 44884.png
-Ni 1.00
-newmtl lambert23SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd images.png
+map_Kd azulLibro.png
 Ni 1.00
 newmtl lambert33SG
 illum 4
@@ -442,14 +362,63 @@ illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
-map_Kd images.png
+map_Kd black-texture-vector.png
 Ni 1.00
 newmtl lambert46SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
-map_Kd amarillo.png
+map_Kd Anaranjado.png
+Ni 1.00
+newmtl lambert47SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Blanco.png
+Ni 1.00
+newmtl lambert48SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Blanco.png
+Ni 1.00
+newmtl lambert49SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd amarillo_libro.png
+Ni 1.00
+newmtl lambert50SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd verde.png
+Ni 1.00
+newmtl lambert51SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Blanco.png
+Ni 1.00
+newmtl lambert52SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd amarillo_libro.png
+Ni 1.00
+newmtl lambert53SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd black-texture-vector.png
 Ni 1.00
 newmtl mesaCentral_lambert16SG
 illum 4
@@ -464,195 +433,6 @@ Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd wooden-texture-1528254.png
-Ni 1.00
-newmtl pasted__Cuarto_lambert28SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd azul.png
-Ni 1.00
-newmtl pasted__Ducha_initialShadingGroup
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd 11IiawEO3LL._AC_.png
-Ni 1.00
-newmtl pasted__Puerta_lambert29SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd wooden-texture-1528254.png
-Ni 1.00
-newmtl pasted__barraTrabajo_lambert12SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd wooden-texture-1528254.png
-Ni 1.00
-newmtl pasted__barraTrabajo_lambert14SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd Morado_puertas.jpg
-Ni 1.00
-newmtl pasted__barraTrabajo_lambert30SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd 4ec1b71a16709eac7e01f91597095340--wallpaper--wallpaper-ideas.jpg
-Ni 1.00
-newmtl pasted__blinn1SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd metal-texture-background-vector.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 0.06
-newmtl pasted__blinn1SG2
-illum 4
-Kd 0.50 0.50 0.50
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 0.06
-newmtl pasted__blinn2SG
-illum 4
-Kd 0.50 0.50 0.50
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 0.06
-newmtl pasted__blinn3SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd 75356395-fondo-de-tecnología-abstracta-de-metal-violeta-con-pulido-cepillado-textura-cromo-plata-acero-alumin.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 0.06
-newmtl pasted__blinn4SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd 6352b3b6bb169b03e6a4e9d225ca560e.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 0.06
-newmtl pasted__blinn5SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd 6352b3b6bb169b03e6a4e9d225ca560e.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 0.06
-newmtl pasted__blinn6SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd 6352b3b6bb169b03e6a4e9d225ca560e.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 0.06
-newmtl pasted__blinn7SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd 6352b3b6bb169b03e6a4e9d225ca560e.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 0.06
-newmtl pasted__blinn8SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd 6352b3b6bb169b03e6a4e9d225ca560e.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 0.06
-newmtl pasted__blinn9SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd 6352b3b6bb169b03e6a4e9d225ca560e.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 0.06
-newmtl pasted__blinn10SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd 6352b3b6bb169b03e6a4e9d225ca560e.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 0.06
-newmtl pasted__blinn11SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd 6352b3b6bb169b03e6a4e9d225ca560e.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 0.06
-newmtl pasted__blinn12SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd 6352b3b6bb169b03e6a4e9d225ca560e.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 0.06
-newmtl pasted__blinn13SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd 6352b3b6bb169b03e6a4e9d225ca560e.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 0.06
-newmtl pasted__blinn14SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd metal-texture-background-vector.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 0.06
-newmtl pasted__estanteSuperior_lambert13SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd wooden-texture-1528254.png
-Ni 1.00
-newmtl pasted__estanteSuperior_lambert32SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd 4ec1b71a16709eac7e01f91597095340--wallpaper--wallpaper-ideas.jpg
 Ni 1.00
 newmtl pasted__lambert9SG
 illum 4
@@ -695,53 +475,6 @@ Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd 4ec1b71a16709eac7e01f91597095340--wallpaper--wallpaper-ideas.jpg
 Ni 1.00
-newmtl pasted__lambert19SG
-illum 4
-Kd 0.35 0.35 0.36
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-Ni 1.00
-newmtl pasted__lambert20SG2
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.52 0.52 0.52
-Tf 1.00 1.00 1.00
-map_Kd istockphoto-520861969-612x612.jpeg
-Ni 1.00
-newmtl pasted__lambert22SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd 44884.png
-Ni 1.00
-newmtl pasted__lambert22SG2
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd 44884.png
-Ni 1.00
-newmtl pasted__lambert23SG
-illum 4
-Kd 0.15 0.13 0.24
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-Ni 1.00
-newmtl pasted__lambert23SG1
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd images.png
-Ni 1.00
-newmtl pasted__lambert23SG4
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd images.png
-Ni 1.00
 newmtl pasted__lambert29SG
 illum 4
 Kd 0.00 0.00 0.00
@@ -749,235 +482,13 @@ Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd wooden-texture-1528254.png
 Ni 1.00
-newmtl pasted__lambert33SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd Morado_puertas.jpg
-Ni 1.00
-newmtl pasted__lambert34SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd Morado_puertas.jpg
-Ni 1.00
-newmtl pasted__lambert35SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd Morado_puertas.jpg
-Ni 1.00
-newmtl pasted__lambert36SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd Morado_puertas.jpg
-Ni 1.00
-newmtl pasted__lambert37SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd Morado_puertas.jpg
-Ni 1.00
-newmtl pasted__lambert38SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd Morado_puertas.jpg
-Ni 1.00
-newmtl pasted__lambert39SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd Morado_puertas.jpg
-Ni 1.00
-newmtl pasted__lambert40SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd Morado_puertas.jpg
-Ni 1.00
-newmtl pasted__lambert41SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd 4ec1b71a16709eac7e01f91597095340--wallpaper--wallpaper-ideas.jpg
-Ni 1.00
-newmtl pasted__lambert42SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd Morado_puertas.jpg
-Ni 1.00
-newmtl pasted__lambert43SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd Morado_puertas.jpg
-Ni 1.00
-newmtl pasted__lambert44SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd images.png
-Ni 1.00
-newmtl pasted__lambert45SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd piso_rosa.png
-Ni 1.00
-newmtl pasted__mesaCentral_lambert16SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd 4ec1b71a16709eac7e01f91597095340--wallpaper--wallpaper-ideas.jpg
-Ni 1.00
-newmtl pasted__mesaCentral_lambert17SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd wooden-texture-1528254.png
-Ni 1.00
-newmtl pasted__pasted__blinn1SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd metal-texture-background-vector.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 0.06
-newmtl pasted__pasted__blinn2SG
-illum 4
-Kd 0.50 0.50 0.50
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 0.06
 newmtl pasted__pasted__lambert9SG
 illum 4
 Kd 0.87 0.52 0.23
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 Ni 1.00
-newmtl pasted__pasted__lambert9SG2
-illum 4
-Kd 0.87 0.52 0.23
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-Ni 1.00
-newmtl pasted__pasted__lambert10SG1
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd 4ec1b71a16709eac7e01f91597095340--wallpaper--wallpaper-ideas.jpg
-Ni 1.00
-newmtl pasted__pasted__lambert12SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd wooden-texture-1528254.png
-Ni 1.00
-newmtl pasted__pasted__lambert13SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd wooden-texture-1528254.png
-Ni 1.00
 newmtl pasted__pasted__lambert14SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd Morado_puertas.jpg
-Ni 1.00
-newmtl pasted__pasted__lambert14SG2
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd Morado_puertas.jpg
-Ni 1.00
-newmtl pasted__pasted__lambert16SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd 4ec1b71a16709eac7e01f91597095340--wallpaper--wallpaper-ideas.jpg
-Ni 1.00
-newmtl pasted__pasted__lambert19SG
-illum 4
-Kd 0.35 0.35 0.36
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-Ni 1.00
-newmtl pasted__pasted__lambert20SG2
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.52 0.52 0.52
-Tf 1.00 1.00 1.00
-map_Kd istockphoto-520861969-612x612.jpeg
-Ni 1.00
-newmtl pasted__pasted__lambert22SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd 44884.png
-Ni 1.00
-newmtl pasted__pasted__lambert23SG
-illum 4
-Kd 0.15 0.13 0.24
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-Ni 1.00
-newmtl pasted__pasted__lambert23SG2
-illum 4
-Kd 0.15 0.13 0.24
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-Ni 1.00
-newmtl pasted__pasted__lambert23SG3
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd images.png
-Ni 1.00
-newmtl pasted__pasted__lambert29SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd wooden-texture-1528254.png
-Ni 1.00
-newmtl pasted__pasted__pasted__lambert9SG
-illum 4
-Kd 0.87 0.52 0.23
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-Ni 1.00
-newmtl pasted__pasted__pasted__lambert14SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
@@ -990,12 +501,6 @@ Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd Morado_puertas.jpg
-Ni 1.00
-newmtl pasted__pasted__pasted__lambert23SG
-illum 4
-Kd 0.15 0.13 0.24
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
 Ni 1.00
 newmtl pasted__pasted__pasted__lambert27SG9
 illum 4
@@ -1010,7 +515,7 @@ Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd Morado_puertas.jpg
 Ni 1.00
-newmtl pasted__pasted__pasted__pasted__lambert14SG1
+newmtl pasted__pasted__pasted__pasted__lambert14SG2
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
@@ -1031,19 +536,6 @@ Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd Morado_puertas.jpg
 Ni 1.00
-newmtl pasted__pasted__pasted__pasted__lambert14SG9
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd Morado_puertas.jpg
-Ni 1.00
-newmtl pasted__pasted__pasted__pasted__lambert27SG9
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-Ni 1.00
 newmtl pasted__pasted__pasted__pasted__lambert27SG54
 illum 4
 Kd 0.00 0.00 0.00
@@ -1056,35 +548,7 @@ Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 Ni 1.00
-newmtl pasted__pasted__pasted__pasted__pasted__lambert14SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd Morado_puertas.jpg
-Ni 1.00
-newmtl pasted__pasted__pasted__pasted__pasted__lambert14SG1
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd Morado_puertas.jpg
-Ni 1.00
-newmtl pasted__pasted__pasted__pasted__pasted__lambert14SG4
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd Morado_puertas.jpg
-Ni 1.00
 newmtl pasted__pasted__pasted__pasted__pasted__lambert14SG6
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd Morado_puertas.jpg
-Ni 1.00
-newmtl pasted__pasted__pasted__pasted__pasted__lambert14SG7
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
@@ -1098,37 +562,11 @@ Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd Morado_puertas.jpg
 Ni 1.00
-newmtl pasted__pasted__pasted__pasted__pasted__lambert14SG21
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd Morado_puertas.jpg
-Ni 1.00
-newmtl pasted__pasted__pasted__pasted__pasted__lambert27SG54
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-Ni 1.00
 newmtl pasted__pasted__pasted__pasted__pasted__lambert27SG66
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
-Ni 1.00
-newmtl pasted__pasted__pasted__pasted__pasted__lambert27SG68
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-Ni 1.00
-newmtl pasted__pasted__pasted__pasted__pasted__pasted__lambert14SG6
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd Morado_puertas.jpg
 Ni 1.00
 newmtl pasted__pasted__pasted__pasted__pasted__pasted__lambert14SG7
 illum 4
@@ -1137,7 +575,7 @@ Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd Morado_puertas.jpg
 Ni 1.00
-newmtl pasted__pasted__pasted__pasted__pasted__pasted__lambert14SG8
+newmtl pasted__pasted__pasted__pasted__pasted__pasted__lambert14SG9
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
@@ -1150,26 +588,6 @@ Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd Morado_puertas.jpg
-Ni 1.00
-newmtl pasted__pasted__pasted__pasted__pasted__pasted__lambert14SG21
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd Morado_puertas.jpg
-Ni 1.00
-newmtl pasted__pasted__pasted__pasted__pasted__pasted__lambert14SG23
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd Morado_puertas.jpg
-Ni 1.00
-newmtl pasted__pasted__pasted__pasted__pasted__pasted__lambert27SG66
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
 Ni 1.00
 newmtl pasted__pasted__pasted__pasted__pasted__pasted__pasted__lambert14SG7
 illum 4
@@ -1192,76 +610,7 @@ Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd Morado_puertas.jpg
 Ni 1.00
-newmtl pasted__pasted__pasted__pasted__pasted__pasted__pasted__lambert14SG21
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd Morado_puertas.jpg
-Ni 1.00
-newmtl pasted__pasted__pasted__pasted__pasted__pasted__pasted__lambert14SG22
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd Morado_puertas.jpg
-Ni 1.00
-newmtl pasted__pasted__pasted__pasted__pasted__pasted__pasted__lambert14SG25
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd Morado_puertas.jpg
-Ni 1.00
-newmtl pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__lambert14SG7
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd Morado_puertas.jpg
-Ni 1.00
-newmtl pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__lambert14SG9
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd Morado_puertas.jpg
-Ni 1.00
-newmtl pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__lambert14SG19
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd Morado_puertas.jpg
-Ni 1.00
-newmtl pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong10SG3
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd 6352b3b6bb169b03e6a4e9d225ca560e.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 18.00
 newmtl pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong10SG3
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd 6352b3b6bb169b03e6a4e9d225ca560e.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 18.00
-newmtl pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong10SG5
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd 6352b3b6bb169b03e6a4e9d225ca560e.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 18.00
-newmtl pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong10SG2
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
@@ -1279,25 +628,7 @@ map_Kd 6352b3b6bb169b03e6a4e9d225ca560e.png
 Ni 1.00
 Ks 0.50 0.50 0.50
 Ns 18.00
-newmtl pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong10SG1
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd 6352b3b6bb169b03e6a4e9d225ca560e.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 18.00
 newmtl pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong10SG2
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd 6352b3b6bb169b03e6a4e9d225ca560e.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 18.00
-newmtl pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong10SG4
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
@@ -1315,42 +646,6 @@ map_Kd 6352b3b6bb169b03e6a4e9d225ca560e.png
 Ni 1.00
 Ks 0.50 0.50 0.50
 Ns 18.00
-newmtl pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong10SG2
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd 6352b3b6bb169b03e6a4e9d225ca560e.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 18.00
-newmtl pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong10SG4
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd 6352b3b6bb169b03e6a4e9d225ca560e.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 18.00
-newmtl pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong10SG5
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd 6352b3b6bb169b03e6a4e9d225ca560e.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 18.00
-newmtl pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong10SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd 6352b3b6bb169b03e6a4e9d225ca560e.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 18.00
 newmtl pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong10SG1
 illum 4
 Kd 0.00 0.00 0.00
@@ -1360,21 +655,12 @@ map_Kd 6352b3b6bb169b03e6a4e9d225ca560e.png
 Ni 1.00
 Ks 0.50 0.50 0.50
 Ns 18.00
-newmtl pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong10SG2
+newmtl pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong10SG3
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd 6352b3b6bb169b03e6a4e9d225ca560e.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 18.00
-newmtl pasted__pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong13SG8
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd metal-texture-background-vector.png
 Ni 1.00
 Ks 0.50 0.50 0.50
 Ns 18.00
@@ -1387,34 +673,7 @@ map_Kd 6352b3b6bb169b03e6a4e9d225ca560e.png
 Ni 1.00
 Ks 0.50 0.50 0.50
 Ns 18.00
-newmtl pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong13SG6
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd metal-texture-background-vector.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 18.00
 newmtl pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong13SG8
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd metal-texture-background-vector.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 18.00
-newmtl pasted__pasted__pasted__pasted__pasted__pasted__pasted__phong13SG10
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd metal-texture-background-vector.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 18.00
-newmtl pasted__pasted__pasted__pasted__pasted__pasted__phong13SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
@@ -1450,72 +709,12 @@ map_Kd metal-texture-background-vector.png
 Ni 1.00
 Ks 0.50 0.50 0.50
 Ns 18.00
-newmtl pasted__pasted__pasted__pasted__pasted__phongE2SG15
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd 6352b3b6bb169b03e6a4e9d225ca560e.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 0.06
-newmtl pasted__pasted__pasted__pasted__pasted__phongE3SG71
-illum 4
-Kd 0.45 0.45 0.45
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 0.06
-newmtl pasted__pasted__pasted__pasted__phong12SG1
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd metal-texture-background-vector.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 18.00
-newmtl pasted__pasted__pasted__pasted__phongE2SG13
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd 6352b3b6bb169b03e6a4e9d225ca560e.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 0.06
 newmtl pasted__pasted__pasted__pasted__phongE2SG15
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd 6352b3b6bb169b03e6a4e9d225ca560e.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 0.06
-newmtl pasted__pasted__pasted__pasted__phongE2SG17
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd 6352b3b6bb169b03e6a4e9d225ca560e.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 0.06
-newmtl pasted__pasted__pasted__pasted__phongE3SG53
-illum 4
-Kd 0.45 0.45 0.45
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 0.06
-newmtl pasted__pasted__pasted__pasted__phongE3SG63
-illum 4
-Kd 0.45 0.45 0.45
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
 Ni 1.00
 Ks 0.50 0.50 0.50
 Ns 0.06
@@ -1536,42 +735,6 @@ map_Kd metal-texture-background-vector.png
 Ni 1.00
 Ks 0.50 0.50 0.50
 Ns 18.00
-newmtl pasted__pasted__pasted__phong12SG3
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd metal-texture-background-vector.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 18.00
-newmtl pasted__pasted__pasted__phongE2SG7
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd 6352b3b6bb169b03e6a4e9d225ca560e.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 0.06
-newmtl pasted__pasted__pasted__phongE2SG9
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd 6352b3b6bb169b03e6a4e9d225ca560e.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 0.06
-newmtl pasted__pasted__pasted__phongE2SG11
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd 6352b3b6bb169b03e6a4e9d225ca560e.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 0.06
 newmtl pasted__pasted__pasted__phongE2SG13
 illum 4
 Kd 0.00 0.00 0.00
@@ -1587,23 +750,6 @@ Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
 map_Kd 6352b3b6bb169b03e6a4e9d225ca560e.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 0.06
-newmtl pasted__pasted__pasted__phongE2SG17
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd 6352b3b6bb169b03e6a4e9d225ca560e.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 0.06
-newmtl pasted__pasted__pasted__phongE3SG9
-illum 4
-Kd 0.45 0.45 0.45
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
 Ni 1.00
 Ks 0.50 0.50 0.50
 Ns 0.06
@@ -1623,23 +769,6 @@ Tf 1.00 1.00 1.00
 Ni 1.00
 Ks 0.50 0.50 0.50
 Ns 0.06
-newmtl pasted__pasted__phong6SG3
-illum 4
-Kd 0.15 0.15 0.55
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 18.00
-newmtl pasted__pasted__phong12SG1
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd metal-texture-background-vector.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 18.00
 newmtl pasted__pasted__phong12SG2
 illum 4
 Kd 0.00 0.00 0.00
@@ -1649,24 +778,6 @@ map_Kd metal-texture-background-vector.png
 Ni 1.00
 Ks 0.50 0.50 0.50
 Ns 18.00
-newmtl pasted__pasted__phongE2SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd metal-texture-background-vector.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 0.06
-newmtl pasted__pasted__phongE2SG5
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd 6352b3b6bb169b03e6a4e9d225ca560e.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 0.06
 newmtl pasted__pasted__phongE2SG7
 illum 4
 Kd 0.00 0.00 0.00
@@ -1711,15 +822,6 @@ Tf 1.00 1.00 1.00
 Ni 1.00
 Ks 0.50 0.50 0.50
 Ns 0.06
-newmtl pasted__phong2SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.45 0.45 0.45
-Tf 1.00 1.00 1.00
-map_Kd Untitled.jpg
-Ni 1.00
-Ks 0.00 0.00 0.00
-Ns 18.00
 newmtl pasted__phong6SG3
 illum 4
 Kd 0.15 0.15 0.55
@@ -1737,51 +839,6 @@ map_Kd metal-texture-background-vector.png
 Ni 1.00
 Ks 0.50 0.50 0.50
 Ns 18.00
-newmtl pasted__phong16SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd azul.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 18.00
-newmtl pasted__phong17SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd azul.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 18.00
-newmtl pasted__phong18SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd metal-texture-background-vector.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 18.00
-newmtl pasted__phong19SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd metal-texture-background-vector.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 18.00
-newmtl pasted__phongE1SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd 6352b3b6bb169b03e6a4e9d225ca560e.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 0.06
 newmtl pasted__phongE2SG
 illum 4
 Kd 0.00 0.00 0.00
@@ -1800,29 +857,6 @@ map_Kd 6352b3b6bb169b03e6a4e9d225ca560e.png
 Ni 1.00
 Ks 0.50 0.50 0.50
 Ns 0.06
-newmtl pasted__phongE2SG7
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd metal-texture-background-vector.png
-Ni 1.00
-Ks 0.50 0.50 0.50
-Ns 0.06
-newmtl pasted__pizarron_lambert25SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd imagen_1_1480091402.png
-Ni 1.00
-newmtl pasted__pizarron_lambert26SG
-illum 4
-Kd 0.00 0.00 0.00
-Ka 0.00 0.00 0.00
-Tf 1.00 1.00 1.00
-map_Kd wooden-texture-1528254.png
-Ni 1.00
 newmtl phong2SG
 illum 4
 Kd 0.00 0.00 0.00
@@ -1850,7 +884,7 @@ map_Kd azul.png
 Ni 1.00
 Ks 0.50 0.50 0.50
 Ns 18.00
-newmtl phong18SG
+newmtl phong19SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
@@ -1859,12 +893,30 @@ map_Kd metal-texture-background-vector.png
 Ni 1.00
 Ks 0.50 0.50 0.50
 Ns 18.00
-newmtl phong19SG
+newmtl phong20SG
 illum 4
 Kd 0.00 0.00 0.00
 Ka 0.00 0.00 0.00
 Tf 1.00 1.00 1.00
-map_Kd metal-texture-background-vector.png
+map_Kd Aqua.png
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl phong21SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Rata.png
+Ni 1.00
+Ks 0.50 0.50 0.50
+Ns 18.00
+newmtl phong22SG
+illum 4
+Kd 0.00 0.00 0.00
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+map_Kd Aqua.png
 Ni 1.00
 Ks 0.50 0.50 0.50
 Ns 18.00
